@@ -8,6 +8,7 @@
     --white: #FFF;
     --ligthBlue: #F3F5FC;
     --darkBlue: #0A3871;
+    --darkBlue2: #114c96;
     --gray400: #495057;
     --gray500: #343A40;
     --gray100: #D8DFE8;
@@ -92,6 +93,7 @@ h2{
     font-size: 2.25rem;
     resize: none;
     outline: none;
+    width: 100%;
 }
 
 .main_section_span{
@@ -148,6 +150,8 @@ h2{
     background-color: var(--white);
     border-radius: 32px;
 
+    
+
     box-shadow: 0 20px 25px rgba(0, 0, 0, 0.05);
 }
 
@@ -157,6 +161,10 @@ h2{
     justify-content: center;
     align-items: center;
     gap: 32px;
+
+
+    
+    display: none;
 }
 
 
@@ -174,12 +182,62 @@ h2{
 }
 
 
-
-
-
-
-
 .main_aside_result{
-    display: none;
+    display: flex;
+    flex-direction: column;
+    gap:50px;
+    margin: 0;
+    width: 85%;
 }
 
+.main_aside_result_text{
+    background-color: transparent;
+    border: none;
+    color: var(--darkBlue);
+    resize: none;
+    outline: none;
+    height: 70dvh;
+    
+}
+
+.main_aside_result_copy{
+    border: 0;
+    padding: 24px;
+    border-radius: 24px;
+    font-size: 1rem;
+    border: 1px solid var(--darkBlue);
+    background-color: var(--white);
+    color: var(--darkBlue);
+}
+
+/* SCROLLBAR */
+
+*::-webkit-scrollbar {
+    height: 10px;
+    width: 10px;
+  }
+  *::-webkit-scrollbar-track {
+    border-radius: 5px;
+    background-color: #DFE9EB;
+  }
+  
+  *::-webkit-scrollbar-track:hover {
+    background-color: #B8C0C2;
+  }
+  
+  *::-webkit-scrollbar-track:active {
+    background-color: #B8C0C2;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: var(--darkBlue);
+  }
+  
+  *::-webkit-scrollbar-thumb:hover {
+    background-color: var(--darkBlue2);
+  }
+  
+  *::-webkit-scrollbar-thumb:active {
+    background-color: var(--darkBlue2);
+  }

@@ -4,17 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Decoder</title>
+    <link rel="stylesheet" href="main.css">
 </head>
+
 <body>
+<div class="bodyMax">
     <header class="header">
         <section class="header_section">
             <img class="header_section_logo" src="img/logo.png" alt="Logotipo da Alura">
         </section>
     </header>
+
     <main class="main">
 
         <section class="main_section">
-            <input class="main_section_textArea" type="text" placeholder="Digite seu texto">
+            <textarea class="main_section_textArea" name="" id="" placeholder="Digite seu texto"></textarea>
             <div class="main_section_span">
                 <img class="main_section_span_img" src="img/span.png">
                 <p class="main_section_span_text">Apenas letras minúslucas e sem acento.</p>
@@ -30,8 +34,11 @@
 
                 <div class="main_aside_mensage">
                     <img class="main_aside_mensage_img" src="img/img.png">
-                    <h1>Nenhuma mensagem encontrada</h1>
-                    <h2>Digite um texto que você deseja criptografar ou descriptografar.</h2>
+                    <div class="main_aside_mensage_text">
+                        <h1>Nenhuma mensagem encontrada</h1>
+                        <h2>Digite um texto que você deseja criptografar ou descriptografar.</h2>
+                    </div>
+                    
                 </div>
     
                 <div class="main_aside_result">
@@ -43,6 +50,7 @@
         </section>
 
     </main>
-    
+    </div>
 </body>
+
 </html>

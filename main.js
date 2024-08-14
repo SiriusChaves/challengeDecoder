@@ -23,13 +23,13 @@ function encoderText(y){
     }
 
     let outputText = encoderTextArray.join("");
-    console.log(outputText);
+    return outputText
 
 }
 
 function decoderText(x){
     let decoderText = x.replace(/ai/g, "a").replace(/enter/g,"e").replace(/imes/g,"i").replace(/ober/g,"o").replace(/ufat/g,"u");
-    console.log(decoderText);
+    return decoderText
 }
 
 // Input/Output Alura
@@ -38,3 +38,25 @@ decoderText("gaitober");
 
 // Mensagem secreta Alura
 decoderText("pairaibenterns poberr enterncairair enterssenter dentersaifimesober enter tenterr fimesnailimeszaidober enterlenter coberm sufatcenterssober!");
+
+
+function criptoText(){
+    
+    let sourceArea = document.getElementById("sourceText");
+    let targetArea = document.getElementById("targetText");
+
+    targetArea.value = encoderText(sourceArea.value)
+}
+
+function decriptoText(){
+    let sourceArea = document.getElementById("sourceText");
+    let targetArea = document.getElementById("targetText");
+
+    targetArea.value = decoderText(sourceArea.value)
+}
+
+function copyText(){
+    let targetArea = document.getElementById("targetText").value;
+
+    navigator.clipboard.writeText(targetArea)
+}

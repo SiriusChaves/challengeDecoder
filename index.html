@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Decoder</title>
     <link rel="stylesheet" href="main.css">
+    <script src="main.js"></script>
 </head>
 
 <body>
@@ -18,14 +19,14 @@
     <main class="main">
 
         <section class="main_section">
-            <textarea class="main_section_textArea" name="" id="" placeholder="Digite seu texto"></textarea>
+            <textarea class="main_section_textArea" name="" id="sourceText" placeholder="Digite seu texto"></textarea>
             <div class="main_section_span">
                 <img class="main_section_span_img" src="img/span.png">
                 <p class="main_section_span_text">Apenas letras minúslucas e sem acento.</p>
             </div>
             <div class="main_section_button">
-                <button class="main_section_button_crip">Criptografar</button>
-                <button class="main_section_button_descrip">Descriptografar</button>
+                <button class="main_section_button_crip" onclick="criptoText()">Criptografar</button>
+                <button class="main_section_button_descrip" onclick="decriptoText()">Descriptografar</button>
             </div>
         </section>
 
@@ -42,8 +43,8 @@
                 </div>
     
                 <div class="main_aside_result">
-                    <textarea class="main_aside_result_text" name="textResult" id="textResult"></textarea>
-                    <button class="main_aside_result_copy">Copiar</button>
+                    <textarea class="main_aside_result_text" name="" id="targetText"></textarea>
+                    <button class="main_aside_result_copy" onclick="copyText()">Copiar</button>
                 </div>
                 
             </div>

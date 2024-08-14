@@ -39,11 +39,41 @@ decoderText("gaitober");
 // Mensagem secreta Alura
 decoderText("pairaibenterns poberr enterncairair enterssenter dentersaifimesober enter tenterr fimesnailimeszaidober enterlenter coberm sufatcenterssober!");
 
+function removeMessage(){
+    let mensageText = document.getElementById("mensageText");
+    let resultText = document.getElementById("resultText");
+
+    mensageText.classList.remove("main_aside_mensage");
+    mensageText.classList.add("main_aside_mensage-Hide");
+
+    resultText.classList.remove("main_aside_result-Hide");
+    resultText.classList.add("main_aside_result")
+
+}
+
+function addMessage(){
+    let mensageText = document.getElementById("mensageText");
+    let resultText = document.getElementById("resultText");
+
+    mensageText.classList.remove("main_aside_mensage-Hide");
+    mensageText.classList.add("main_aside_mensage");
+
+    resultText.classList.remove("main_aside_result");
+    resultText.classList.add("main_aside_result-Hide")
+
+}
+
 
 function criptoText(){
     
     let sourceArea = document.getElementById("sourceText");
     let targetArea = document.getElementById("targetText");
+
+    if(!sourceArea.value){
+        addMessage()
+    }else{
+        removeMessage()
+    }
 
     targetArea.value = encoderText(sourceArea.value)
 }
@@ -52,6 +82,12 @@ function decriptoText(){
     let sourceArea = document.getElementById("sourceText");
     let targetArea = document.getElementById("targetText");
 
+    if(!sourceArea.value){
+        addMessage()
+    }else{
+        removeMessage()
+    }
+
     targetArea.value = decoderText(sourceArea.value)
 }
 
@@ -59,4 +95,5 @@ function copyText(){
     let targetArea = document.getElementById("targetText").value;
 
     navigator.clipboard.writeText(targetArea)
+    alert("Copiado com sucesso.")
 }

@@ -161,12 +161,11 @@ h2{
     justify-content: center;
     align-items: center;
     gap: 32px;
-
-
-    
-    display: none;
 }
 
+.main_aside_mensage-Hide{
+    display: none;
+}
 
 
 .main_aside_mensage_img{
@@ -188,6 +187,11 @@ h2{
     gap:50px;
     margin: 0;
     width: 85%;
+    
+}
+
+.main_aside_result-Hide{
+    display: none;
 }
 
 .main_aside_result_text{
@@ -209,6 +213,9 @@ h2{
     background-color: var(--white);
     color: var(--darkBlue);
 }
+
+
+
 
 /* SCROLLBAR */
 

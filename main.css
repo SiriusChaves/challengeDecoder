@@ -45,22 +45,24 @@ h2{
 
 .bodyMax{
     max-width: 1440px;
-    max-height: 1024px;
-    display: flex;
-    justify-content: center;
+    /**display: flex;
+    justify-content: center;**/
 }
 
 /* HEADER */
 
-.header{
+.main_header{
     display: flex;
-    justify-content: center;
-    width: 10%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    width: 10vw;
+    height: 100vh;
 }
 
-.header_section_logo{
-    width: 80%;
-    padding-top: 20%;
+.main_header_logo{
+    padding-top:10%;
+    
 }
 
 
@@ -70,8 +72,7 @@ h2{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 85%;
-    gap: 80px;
+    width: 100%;
     
 }
 
@@ -79,13 +80,13 @@ h2{
 .main_section{
     display: flex;
     flex-direction: column;
-    align-items:last baseline;
-    width: 70%;
+    justify-content: center;
+    align-items: last baseline;
+    width: 60vw;
     height: 100vh;
 }
 
 .main_section_textArea, .main_section_textArea:active{
-    margin-top: 15%;
     background-color: transparent;
     border: none;
     min-height: 70%;
@@ -139,13 +140,18 @@ h2{
 /* ASIDE */
 
 .main_aside{
-    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30vw;
+    height: 100vh;
 }
 
 .main_aside_card{
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 90%;
     height: 90vh;
     background-color: var(--white);
     border-radius: 32px;
@@ -182,11 +188,11 @@ h2{
 
 
 .main_aside_result{
+    width: 100%;
     display: flex;
     flex-direction: column;
-    gap:50px;
-    margin: 0;
-    width: 85%;
+    justify-content: center;
+    align-items: center;
     
 }
 
@@ -195,17 +201,19 @@ h2{
 }
 
 .main_aside_result_text{
+    width: 90%;
+    min-height: 70vh;
     background-color: transparent;
     border: none;
     color: var(--darkBlue);
     resize: none;
     outline: none;
-    height: 70dvh;
     
 }
 
 .main_aside_result_copy{
     border: 0;
+    width: 90%;
     padding: 24px;
     border-radius: 24px;
     font-size: 1rem;

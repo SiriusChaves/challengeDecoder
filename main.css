@@ -45,8 +45,6 @@ h2{
 
 .bodyMax{
     max-width: 1440px;
-    /**display: flex;
-    justify-content: center;**/
 }
 
 /* HEADER */
@@ -223,6 +221,95 @@ h2{
     background-color: var(--white);
     color: var(--darkBlue);
 }
+
+
+/* MediaQuery */
+
+@media (max-width: 768px){
+
+    .main{
+        flex-direction: column;
+    
+        width: 100dvw;
+        height: 100dvh;
+        gap: 2dvh;
+    }
+
+    .main_header{
+        height: auto;
+        width: 100vw;
+        height: 10dvh;
+        justify-content: center;
+        align-items: start;
+    }
+
+    .main_header_logo{
+
+        width: 10%;
+        padding: 0;
+        
+    }
+
+    .main_section{
+        height: auto;
+        width: 95vw;
+        height: 52dvh;
+    }
+
+    .main_aside{
+        align-items: center;
+        height: auto;
+        width: 100vw;
+        height: 30dvh;
+    }
+    .main_aside_card{
+        height: 100%;
+        flex-direction: column;
+    }
+
+    .main_aside_mensage_img{
+        display: none;
+    }
+
+    .main_aside_result{
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 10px;
+    }
+
+    .main_aside_result_text{
+        min-height: auto;
+        height: 100px;
+    }
+
+}
+
+
+
+@media (max-width: 375px){
+
+    .main_header_logo{
+
+        width: 20%;
+        
+    }
+
+    .main_section_button{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .main_section_button_crip, .main_section_button_descrip{
+        width: 90%;
+    }
+}
+
+
+
+
+
+
 
 
 

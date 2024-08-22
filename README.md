@@ -12,9 +12,14 @@ Este é um projeto faz parte de challenge do curso de lógica de programação d
 ## Funcionalidades
 
 - Encriptar uma mensagem
-- Descriptar uma mensagem
+- Desencriptar uma mensagem
 - Multiplataforma
 - Botão "Copiar"
+
+# Deploy
+
+- [decoder.github.com ](https://siriuschaves.github.io/challengeDecoder/)
+
 
 
 

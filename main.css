@@ -237,7 +237,7 @@ h2{
 
     .main_header{
         height: auto;
-        width: 100vw;
+        width: 100dvw;
         height: 10dvh;
         justify-content: center;
         align-items: start;
@@ -252,14 +252,14 @@ h2{
 
     .main_section{
         height: auto;
-        width: 95vw;
+        width: 95dvw;
         height: 52dvh;
     }
 
     .main_aside{
         align-items: center;
         height: auto;
-        width: 100vw;
+        width: 100dvw;
         height: 30dvh;
     }
     .main_aside_card{

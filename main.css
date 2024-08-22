@@ -88,7 +88,7 @@ h2{
 .main_section_textArea, .main_section_textArea:active{
     background-color: transparent;
     border: none;
-    min-height: 70%;
+    height: 70%;
     color: var(--darkBlue);
     font-size: 2.25rem;
     resize: none;
@@ -289,6 +289,10 @@ h2{
 
 @media (max-width: 375px){
 
+    .main{
+        height: auto;
+    }
+
     .main_header_logo{
 
         width: 20%;
@@ -305,6 +309,36 @@ h2{
     }
 }
 
+@media (max-height:405px){
+    #mensageText_card{
+        display: none;
+    }
+
+    .main_aside_mensage_img{
+        width: 50%;
+    }
+}
+
+@media (max-height:300px){
+    .main{
+        height: 300px;
+    }
+
+    .main_aside_mensage_img{
+        display: none;
+    }
+
+    .main_header{
+        height: 10%px;
+    }
+
+    .main_section{
+        height: 52%;
+    }
+    .main_aside{
+        height: 30%;
+    }
+}
 
 
 
